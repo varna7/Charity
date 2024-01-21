@@ -1,0 +1,59 @@
+.header {
+  // height: 120vh;
+  
+  .carousel {
+    // height: 100vh;
+    .carousel-indicators {
+      display: none;
+    }
+    .carousel-inner {
+      // height: 120vh;
+      .carousel-item {
+        
+        img{
+            
+        }
+        .carousel-caption {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          text-align: left;
+          top: 30%;
+          left: 10%;
+          right: 40%;
+          h6 {
+            font-weight: 600;
+          }
+
+          h1 {
+            font-size: 4rem;
+            font-family: "Playfair Display", Sans-serif;
+            font-weight: 900;
+          }
+          p {
+            font-size: 1rem;
+           
+          }
+          @media (max-width: 767px) {
+            top: 20%;
+            left: 10%;
+            right: 10%;
+            
+            h1 {
+              font-size: 2.5rem;
+            }
+            h6{
+              font-size: 1.25rem;
+            }
+            p{
+              font-size: 1.25rem;
+            }
+          }
+        }
+        @media (max-width: 767px){
+          height: 100vh;
+        }
+      }
+    }
+  }
+}
