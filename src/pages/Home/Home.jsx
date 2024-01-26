@@ -2,11 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slide1 from "../../assets/slider1.png";
-import slide2 from "../../assets/slider2.png";
-import slide3 from "../../assets/slider3.png";
-import slide4 from "../../assets/slider4.png";
-import slide5 from "../../assets/slider5.png";
 import about from "../../assets/about.jpg";
 import CountUp from "react-countup";
 import CheckIcon from "@mui/icons-material/Check";
@@ -18,36 +13,11 @@ import Header from "../../components/Header/Header";
 import "./Home.scss";
 
 const Home = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    centerMode: true, // Enable center mode
-    centerPadding: "0",
-  };
 
   return (
     <div className="home">
       <Header />
-      <Slider {...settings}>
-        <div className="slide-item py-5">
-          <img src={slide1} alt="" />
-        </div>
-        <div className="slide-item py-5">
-          <img src={slide2} alt="" />
-        </div>
-        <div className="slide-item py-5">
-          <img src={slide3} alt="" />
-        </div>
-        <div className="slide-item py-5">
-          <img src={slide4} alt="" />
-        </div>
-        <div className="slide-item py-5">
-          <img src={slide5} alt="" />
-        </div>
-      </Slider>
+      
       <section>
         <div className="d-flex flex-column  align-items-center px-2 px-md-5  gap-3">
           <h6>GET INVOLVED</h6>

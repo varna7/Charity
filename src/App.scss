@@ -1,3 +1,13 @@
-.App{
-    
+@import "./variables";
+
+.head{
+    background:linear-gradient(0deg, $secondary-overlay, $primary-overlay), url("./assets/palliative1.jpg");
+    height: 10rem;
+    background-size:cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+

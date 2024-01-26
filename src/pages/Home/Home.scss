@@ -1,10 +1,12 @@
+@import '../../variables';
+
 .home{
-    position: absolute;
-    z-index: -10;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // z-index: -10;
+    // top: 0;
+    // left: 0;
     font-family: "poppins",sans-serif;
-    background-color: rgba(239, 242, 246, 0.753);
+    // background-color: ;
     section{
         margin-bottom: 5rem;
     }
@@ -25,20 +27,20 @@
       }
     button.highlight{
         border: none;
-        background-color: rgb(255, 225, 0);
+        background-color: $primary-color;
         
         
     }
     button.detail{
-        border: 2px solid rgb(255, 225, 0);
-        color: rgb(255, 225, 0);
+        border: 2px solid $primary-color;
+        color: $primary-color;
     }
     hr{
         color: white;
         border: 1px solid white;
     }
     h6{
-        color: rgb(255, 225, 0);
+        color: $primary-color;
         font-weight: 900;
     }
     h5{

@@ -1,0 +1,43 @@
+@import "../../variables";
+
+.about-main{
+    font-family: $font-family;
+    .about-intro{
+        .content{
+            h4{
+                color: $primary-color;
+            }
+            span{
+                
+
+            }
+            p{
+                text-align: justify;
+            }
+
+        }
+        .img-container{
+            position: relative;
+            .back-box{
+                position: absolute;
+                z-index: -10;
+                top: 10%;
+                right: 3%;
+                width: 50%;
+                height: 40%;
+                background:linear-gradient(0deg, $secondary-color, $primary-color), url("../../assets/palliative1.jpg");
+                border-radius: 20px;
+            }
+            .about-img{
+                position: absolute;
+                top: 20%;
+                width: 80%;
+               
+                padding: .25rem;
+                border: 5px solid $primary-color;
+                border-radius: 20px;
+                
+            }
+        }
+    }
+}

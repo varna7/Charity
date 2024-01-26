@@ -1,6 +1,8 @@
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Topbar from "./components/Topbar/Topbar";
 import Home from "./pages/Home/Home";
+import Footer from './components/Footer/Footer';
+import About from './pages/About/About';
 import './App.scss'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { yellow, purple } from '@mui/material/colors';
@@ -21,8 +23,12 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+
+
         </Routes>
       </Router>
+      <Footer/>
       
       {/* about<br/>
       events<br/>

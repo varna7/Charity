@@ -9,8 +9,8 @@ import GoogleIcon from "@mui/icons-material/Google";
 
 const Socials = () => {
   return (
-    <div className=" d-flex  flex-lg-row  flex-column gap-5 justify-content-between pt-3 px-1 px-lg-5">
-        <div className="left d-lg-flex ">
+    <div className=" d-flex  flex-md-row  flex-column gap-5 justify-content-between pt-3 px-1 px-lg-5">
+        <div className="left d-md-flex ">
           <div className="item">
             <CallIcon fontSize="small" />
             <span>+91 9765123456</span>
