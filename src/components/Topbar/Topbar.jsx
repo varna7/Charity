@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -34,14 +33,14 @@ const Topbar = () => {
                   >
                     <NavDropdown.Item href="/about">About Us</NavDropdown.Item>
                     <NavDropdown.Divider/>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="/governing-body">
                       Governing Body
                     </NavDropdown.Item>
                     
                   </NavDropdown>
               
               <Nav.Link href="#services">SERVICES</Nav.Link>
-              <Nav.Link href="#services">GALLARY</Nav.Link>
+              <Nav.Link href="/gallary">GALLARY</Nav.Link>
 
               <Nav.Link href="#contact">CONTACT</Nav.Link>
               

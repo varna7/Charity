@@ -6,7 +6,7 @@
     // top: 0;
     // left: 0;
     font-family: "poppins",sans-serif;
-    // background-color: ;
+    // background-color:$primary-background ;
     section{
         margin-bottom: 5rem;
     }
@@ -22,7 +22,10 @@
         font-weight: 700;
         font-size: 14px;
         letter-spacing: .5px;
-        
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
         
       }
     button.highlight{
@@ -62,7 +65,7 @@
         .item-container{
             margin: 1rem;
             padding: .5rem;
-            background-color: whitesmoke;
+            background-color: $primary-background;
             border-radius: 10px;
             box-shadow: rgba(212, 211, 208, 0.2) 0px 8px 24px;
             .item{
@@ -71,7 +74,8 @@
                 align-items: center;
                 text-align: center;
                 padding: 2rem;
-                border: 1px solid rgba(255, 225, 0, 0.607);
+                border: 1px solid $primary-color;
+                border-radius: 10px;
                 gap: 1rem;
                 font-size: 5rem;
                 p{
@@ -92,7 +96,7 @@
                 bottom: -55px;
                 left: 15%;
                 border-radius: 10px;
-                background-color: rgb(255, 225, 0);
+                background-color: $primary-color;
                 color: white;
                 width: 80%;
                 height: 25%;
@@ -117,7 +121,7 @@
             .inner-content{
                 .exp{
                     border-radius: 10px;
-                background-color: rgb(255, 225, 0);
+                background-color: $primary-color;
                 color: white;
                 }
             }
@@ -138,7 +142,7 @@
                 }
         }
         .action{
-            background:linear-gradient(0deg, rgba(91, 70, 2, 0.421), rgba(85, 60, 2, 0.497)), url("../../assets/smile.jpg");
+            background:linear-gradient(0deg, $secondary-overlay,$primary-overlay), url("../../assets/smile.jpg");
             background-size:cover;
             .content{
                 color: white;
@@ -148,12 +152,13 @@
                 display: flex;
                 align-items:center;
                 border-radius: 10px;
-                background-color: rgba(108, 93, 5, 0.763);
+                background-color: $secondary-overlay;
                 form{
-                    .input{
-                        padding: 2rem;
-                        border-radius: 50%;
-                        
+                    input{
+                        padding: .5rem;
+                        border: none;
+                        border-radius: 10px;
+                        outline: none;
                     }
                     
                 }

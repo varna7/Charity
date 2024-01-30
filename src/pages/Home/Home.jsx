@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,13 +14,12 @@ import Header from "../../components/Header/Header";
 import "./Home.scss";
 
 const Home = () => {
-
   return (
     <div className="home">
       <Header />
-      
+
       <section>
-        <div className="d-flex flex-column  align-items-center px-2 px-md-5  gap-3">
+        <div className="d-flex flex-column  align-items-center p-3 p-md-5  gap-3">
           <h6>GET INVOLVED</h6>
           <h1>Let's Make A difference Today</h1>
           <div className="d-flex flex-column flex-md-row  ">
@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div className="d-flex flex-column flex-lg-row w-100 p-3 p-md-5 gap-5">
+        <div className="d-flex flex-column bg-white flex-lg-row w-100 p-3 p-md-5 gap-5">
           <div className="img-container w-100 w-lg-50 ps-lg-5 mb-5">
             <img src={about} alt="" />
             <div className="stats d-flex gap-3 justify-content-center align-items-center ">
@@ -96,30 +96,32 @@ const Home = () => {
           </div>
           <div className="content w-100 w-lg-50 px-3 px-md-5">
             <h6>ABOUT US</h6>
-            <h1>Our Work Promise To Uphold The Trust Placed</h1>
+            <h1>Transformative Care Beyond Boundaries</h1>
             <p>
-              Repellendus litora velit irure ea nostrud cum autem, quam. Gravida
-              harum incidunt varius volutpat facilisi purus, eum rerum,
-              hymenaeos sit quaerat dictumst doloremque ultrices impedit,
-              iaculis!
+              Embark on a compassionate journey with our Rehabilitation and
+              Palliative Care Centre, intricately woven around Prakashadhara—a
+              sanctuary for the mentally challenged and differently-abled in the
+              vast Pathanamthitta District, Kerala. Our mission is to redefine
+              family support during terminal illnesses, offering solace and
+              guidance.
             </p>
             <div className="inner-content d-flex flex-column-reverse flex-md-row gap-4">
               <ul>
                 <li className="p-1">
                   <CheckIcon color="primary" />
-                  <span className="mx-2">Porta tempora facilisi, hac</span>
+                  <span className="mx-2">Skillful Transition</span>
                 </li>
                 <li className="p-1">
                   <CheckIcon color="primary" />
-                  <span className="mx-2">Beatae hac ultrices, nisi.</span>
+                  <span className="mx-2">Versatile Accommodation</span>
                 </li>
                 <li className="p-1">
                   <CheckIcon color="primary" />
-                  <span className="mx-2">Incididunt vel inci dunt</span>
+                  <span className="mx-2">Holistic Medical Support</span>
                 </li>
                 <li className="p-1">
                   <CheckIcon color="primary" />
-                  <span className="mx-2">Porta tempora facilisi, hac</span>
+                  <span className="mx-2">Specialized Bedside Care</span>
                 </li>
               </ul>
               <div className="exp px-4 d-flex flex-column justify-content-center align-items-center">
@@ -128,11 +130,11 @@ const Home = () => {
                 <h5> OF EXPERIENCE</h5>
               </div>
             </div>
-            <button className="highlight">Learn More</button>
+            <button className="highlight"><Link to="/about">Learn More</Link></button>
           </div>
         </div>
       </section>
-      <section >
+      <section>
         <div className="d-flex flex-column w-100  p-3 p-md-5 gap-4">
           <h6 className="px-md-5">RECENT CAMPAIGN</h6>
           <div className="head d-flex flex-column flex-md-row w-100  align-items-end px-md-5">
@@ -161,7 +163,11 @@ const Home = () => {
                   <h4>19 March, 2024</h4>
                 </div>
               </div>
-              <ProgressBar now={70} label={`Raised Amount : ${70}%`} variant="warning" />
+              <ProgressBar
+                now={70}
+                label={`Raised Amount : ${70}%`}
+                variant="warning"
+              />
               <div className="btn-group d-flex gap-4">
                 <button className="highlight">Donate Now</button>
                 <button className="detail">Program Details</button>
@@ -184,7 +190,11 @@ const Home = () => {
                   <h4>19 March, 2024</h4>
                 </div>
               </div>
-              <ProgressBar now={60} label={`Raised Amount : ${60}%`} variant="warning" />
+              <ProgressBar
+                now={60}
+                label={`Raised Amount : ${60}%`}
+                variant="warning"
+              />
               <div className="btn-group d-flex gap-4">
                 <button className="highlight">Donate Now</button>
                 <button className="detail">Program Details</button>
@@ -198,15 +208,19 @@ const Home = () => {
           <div className="content w-100 w-lg-50 d-flex flex-column gap-4 p-2 p-lg-5">
             <h6>CALL TO ACTION</h6>
             <h1>Fundraising For The People And Causes You Care About</h1>
-            <p>Senectus elementum fugiat non exercitationem ullamco, asperiores occaecat placerat maxime laboriosam tortor voluptates, aenean torquent voluptas pharetra diam.</p>
+            <p>
+              Senectus elementum fugiat non exercitationem ullamco, asperiores
+              occaecat placerat maxime laboriosam tortor voluptates, aenean
+              torquent voluptas pharetra diam.
+            </p>
           </div>
           <div className="action-form w-100 w-lg-50 p-5 mx-lg-5 ">
             <form action="" method="post" className="d-flex flex-column gap-4 ">
-              <input type="text" name="" id="" placeholder="Name"/>
+              <input type="text" name="" id="" placeholder="Name" />
               <input type="email" name="" id="" />
               <div className="d-flex gap-3">
-                <input type="text" name="" id=""  className="w-75"/>
-                <input type="text" name="" id="" className="w-25"/>
+                <input type="text" name="" id="" className="w-75" />
+                <input type="text" name="" id="" className="w-25" />
               </div>
               <button className="highlight">Get Involve Today</button>
             </form>

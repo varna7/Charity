@@ -3,7 +3,13 @@
 .about-main{
     font-family: $font-family;
     .about-intro{
+        display: flex;
+        padding: 4rem;
+        gap: 2rem;
         .content{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
             h4{
                 color: $primary-color;
             }
@@ -17,6 +23,7 @@
 
         }
         .img-container{
+            width: 50%;
             position: relative;
             .back-box{
                 position: absolute;
@@ -27,7 +34,12 @@
                 height: 40%;
                 background:linear-gradient(0deg, $secondary-color, $primary-color), url("../../assets/palliative1.jpg");
                 border-radius: 20px;
+                
             }
+            .left{
+                    right: 0;
+                    left: 1%;
+                }
             .about-img{
                 position: absolute;
                 top: 20%;
@@ -38,6 +50,24 @@
                 border-radius: 20px;
                 
             }
+            .img-left{
+                left: 15%;
+            }
+        }
+        @media (max-width: 767px) {
+            flex-direction: column;
+            padding: 2rem;
+            .content{
+                width: 100%;
+            }
+            .img-container{
+                width: 100%;
+                position: relative;
+                .about-img{
+
+                }
+            }
+            
         }
     }
 }
